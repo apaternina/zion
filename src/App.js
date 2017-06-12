@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Button from './Components/Button'
+import iconConfig from './Icons/icon-config.svg';
 import './App.css';
-
+/*
 class App extends Component {
   render() {
-    return (
+    return (  
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -16,6 +17,25 @@ class App extends Component {
       </div>
     );
   }
+}*/
+
+class App extends Component {
+  render() {
+    return (  
+      <div className="App">
+        <div className="App-header">
+          <div className="App-content-button">
+            <Button icon={iconConfig} />
+            <Button icon={iconConfig} />
+            <Button icon={iconConfig} />
+          </div>
+        </div>
+        <div className="App-footer">
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
+
