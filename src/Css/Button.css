@@ -1,0 +1,12 @@
+.App-content-button {
+	float: right;
+    padding: 60px;
+}
+
+.App-content-button a {
+	display: inline-block;
+	margin: 0px 28px;
+	color: #FFF;
+    font-style: normal;
+    text-decoration: none;
+}

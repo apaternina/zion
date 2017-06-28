@@ -3,8 +3,18 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 44.57px;
+  width: 90.66px;
+}
+
+.Content-logo {
+    float: left;
+    padding: 46px;
+    padding-left: 54px;
+}
+
+body {
+  background-color: #bb4a6b;
 }
 
 /*.App-header {
@@ -27,7 +37,8 @@
 .App-header {
   background-color: #60575e;
   height: 136px;
-  width: 100%; 
+  width: 100%;
+  opacity: 0.8; 
 }
 
 .App-content-button a{

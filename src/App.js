@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from './Components/Button'
 import iconConfig from './Icons/icon-config.svg';
 import './App.css';
+import logo from './logo.svg';
 /*
 class App extends Component {
   render() {
@@ -24,11 +25,15 @@ class App extends Component {
     return (  
       <div className="App">
         <div className="App-header">
+        <div className="Content-logo">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
           <div className="App-content-button">
-            <Button icon={iconConfig} />
-            <Button icon={iconConfig} />
-            <Button icon={iconConfig} />
+            <Button name={"Acerca de"} />
+            <Button name={"Que hacermos?"} />
+            <Button name={"Servicios"} />
           </div>
+          <div></div>
         </div>
         <div className="App-footer">
         </div>

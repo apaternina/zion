@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import '../Css/Button.css';
 
 class Button extends Component {
 	render() {
-		var icon = this.props.icon;
+		var name = this.props.name;
 		return (
-			<a src={icon} />
+			<a href="#"> {name} </a>
 		);
 	}
 }
