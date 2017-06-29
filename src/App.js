@@ -3,6 +3,7 @@ import Button from './Components/Button'
 import iconConfig from './Icons/icon-config.svg';
 import './App.css';
 import logo from './logo.svg';
+import introLogo from './img/background-intro.svg';
 /*
 class App extends Component {
   render() {
@@ -25,16 +26,19 @@ class App extends Component {
     return (  
       <div className="App">
         <div className="App-header">
-        <div className="Content-logo">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
+          <div className="Content-logo">
+            <img src={logo} className="App-logo" alt="logo" />
+          </div>
           <div className="App-content-button">
             <Button name={"Acerca de"} />
             <Button name={"Que hacermos?"} />
             <Button name={"Servicios"} />
+            <Button name={"Contactos"} />
+            <Button name={"Equipo"} />
           </div>
           <div></div>
         </div>
+        <div className="App-body"></div>
         <div className="App-footer">
         </div>
       </div>

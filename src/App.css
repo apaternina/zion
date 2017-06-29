@@ -35,12 +35,19 @@ body {
 
 
 .App-header {
-  background-color: #60575e;
+  background-color: #5d1d1d;
   height: 136px;
   width: 100%;
   opacity: 0.8; 
 }
 
 .App-content-button a{
-  display: 
+  
+}
+
+.App-body {
+background-image: url('./img/background-intro.svg');
+    width: 1060.06px;
+    height: 465px;
+    background-repeat: no-repeat;
 }
