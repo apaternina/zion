@@ -38,7 +38,12 @@ class App extends Component {
           </div>
           <div></div>
         </div>
-        <div className="App-body"></div>
+        <div className="App-body">
+        <div className="circle"></div>
+        <div className="street">
+
+        </div>
+        </div>
         <div className="App-footer">
         </div>
       </div>

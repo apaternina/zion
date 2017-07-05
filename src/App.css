@@ -41,13 +41,35 @@ body {
   opacity: 0.8; 
 }
 
-.App-content-button a{
-  
+.App-content-button a {
+
 }
 
 .App-body {
-background-image: url('./img/background-intro.svg');
-    width: 1060.06px;
-    height: 465px;
-    background-repeat: no-repeat;
+  
+}
+
+.brackground-intro {
+  background-image: url('./img/background-intro.svg');
+  background-repeat: no-repeat;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 83px;
+}
+
+.street {
+  background-image: url('./img/street.svg');
+  background-repeat: no-repeat;
+width: 787px;
+    height: 200px;
+    margin: 0px auto;
+    top: -43px;
+    position: relative;
+    left: -38px;
 }
