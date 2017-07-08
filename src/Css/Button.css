@@ -8,4 +8,35 @@
 	color: #FFF;
     font-style: normal;
     text-decoration: none;
+
+
+}
+
+
+/*=====================================================
+=            Bootstrap 2.3.2 Media Queries            =
+=====================================================*/
+/*lg*/
+@media only screen and (max-width : 1200px) {
+
+}
+
+/*lg*/
+@media only screen and (max-width : 979px) {
+
+}
+
+/*md*/
+@media only screen and (max-width : 767px) {
+
+}
+
+/*sm*/
+@media only screen and (max-width : 480px) {
+
+}
+
+/*xs*/
+@media only screen and (max-width : 320px) {
+
 }

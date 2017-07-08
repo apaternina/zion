@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import Menu from './Components/Menu';
 import Button from './Components/Button'
 import iconConfig from './Icons/icon-config.svg';
 import './App.css';
@@ -28,20 +29,19 @@ class App extends Component {
     return (  
       <div className="App">
       <Row className="App-header m-r-none m-l-none">
-        <Col lg={2} className="Content-logo">
+        <Col lg={2} md={2} xs={1} className="Content-logo">
           <img src={logo} className="App-logo" alt="logo" />
         </Col>
-        <Col lg={10} className="App-content-button">
-            <Button name={"Acerca de"} />
-            <Button name={"Que hacermos?"} />
-            <Button name={"Servicios"} />
-            <Button name={"Contactos"} />
-            <Button name={"Equipo"} />
+        <Menu items = {['Acerca de','Que Hacemos', 'Servicios' , 'Contacto', 'Equipo']} />
+        <Col xs={1} className={"hidden-lg hidden-xl" }>
+        Menu
         </Col>
       </Row>
         <div className="App-body">
-        <div className="circle"></div>
-        <div className="street">
+          <div className="circle"></div>
+          <div className="imgwrap">
+            <div className="street">
+          </div>
 
         </div>
         </div>
