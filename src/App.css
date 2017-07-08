@@ -8,7 +8,7 @@
 }
 
 .Content-logo {
-    float: left;
+  
     padding: 46px;
     padding-left: 54px;
 }
@@ -55,21 +55,42 @@ body {
 }
 
 .circle {
-    width: 200px;
-    height: 200px;
+     width: 230px;
+    height: 230px;
     border-radius: 50%;
     background-color: #FFFFFF;
     margin: 0 auto;
-    margin-top: 83px;
+    top: 137px;
+    z-index: 2;
+    position: relative;
 }
 
 .street {
-  background-image: url('./img/street.svg');
-  background-repeat: no-repeat;
-width: 787px;
-    height: 200px;
+    background-image: url(./img/street.svg);
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 185px;
     margin: 0px auto;
-    top: -43px;
+    top: 87px;
     position: relative;
-    left: -38px;
+    left: -4px;
+}
+
+
+/* Util classes */
+
+.p-l-none {
+  padding-left: 0px;
+}
+
+.p-r-none {
+  padding-right: 0px;
+}
+
+.m-l-none {
+  margin-left: 0px;
+}
+
+.m-r-none {
+  margin-right: 0px;
 }
