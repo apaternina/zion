@@ -11,14 +11,14 @@ class Menu extends Component {
 		});
 
 		return (
-			<div>
-				<Col lg={10} md={10} xs={9} className="App-content-button hidden-xs hidden-sm hidden-md">
+			<Col lg={10} md={10} xs={9} >
+				<Col className="App-content-button hidden-xs hidden-sm hidden-md">
 		            { items }
 		        </Col>
 		        <div>
 		        	<MenuIcon />
 		        </div>
-		    </div>
+		    </Col>
 		);
 	}
 }

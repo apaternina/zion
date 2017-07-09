@@ -1,3 +1,41 @@
+@font-face {
+font-family: 'MyriadPro';
+    font-weight: bold;
+    src: url("fonts/MyriadPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'MyriadPro Bold';
+    font-weight: bold;
+    src: url("fonts/MyriadPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'MyriadPro BoldCond';
+    font-weight: bold;
+    src: url("fonts/MyriadPro-BoldCond.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'MyriadPro BoldCondIt';
+    font-weight: bold;
+    src: url("fonts/MyriadPro-BoldCondIt.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'MyriadPro Cond';
+    font-weight: bold;
+    src: url("fonts/MyriadPro-Cond.otf") format("opentype");
+}
+
+@font-face {
+font-family: 'MyriadPro CondIt';
+    font-weight: bold;
+    src: url("fonts/MyriadPro-CondIt.otf") format("opentype");
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -35,10 +73,12 @@ body {
 
 
 .App-header {
-  background-color: #5d1d1d;
-  height: 136px;
+  background-color: #60575e;
+  height: 150px;
   width: 100%;
-  opacity: 0.8; 
+  position: fixed;
+  z-index: 1; 
+  border-bottom: 14px solid #bb4a6b;
 }
 
 .App-content-button a {
@@ -162,4 +202,28 @@ body {
   .hidden-xs {
     display: none;
   }
+}
+
+
+.body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.element {
+  height:1000px;
+  background-color: #ededed;
+  font-size: 45px;
+  border-top:1px solid #000;
+  padding-top:150px;
+  padding-left:10px;
+}
+
+.active {
+  font-weight: 600;
+} 
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
