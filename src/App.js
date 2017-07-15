@@ -92,28 +92,39 @@ class App extends Component {
     return (
       <div>
       <div className="App">
-      <Row className="App-header m-r-none m-l-none">
-        <Col lg={2} md={2} xs={2}  className="Content-logo">
-          <img src={logo} className="App-logo" alt="logo" />
-        </Col>
-        <Col lg={10} md={10} sm={10} className="App-content-link vertical-align hidden-xs hidden-sm">
-           <ul>
+        <Row className="App-header m-r-none m-l-none">
+          <Col lg={2} md={2} xs={2}  className="Content-logo">
+            <img src={logo} className="App-logo" alt="logo" />
+          </Col>
+          <Col lg={10} md={10} sm={10} className="App-content-link vertical-align hidden-xs hidden-sm">
+             <ul>
+                  <li><Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >Acerca de</Link></li>
+                  <li><Link activeClass="active" className="test6" to="anchor" spy={true} smooth={true} duration={500}>¿Qué hacemos?</Link></li>
+                  <li><Link activeClass="active" className="test7" to="test7" spy={true} smooth={true} duration={durationFn}>Servicios</Link></li>
+                  <li> <a onClick={() => animateScroll.scrollTo(100)}>Contacto</a></li>
+                  <li> <a onClick={() => animateScroll.scrollToBottom()}>Equipo</a></li>
+              </ul>
+          </Col>
+          <Col xs={8} className={"hidden-lg hidden-md hidden-xl content-menu-wrap" }>
+          <i className="material-icons">menu</i>
+          </Col>
+        </Row>
+          <div className="App-body">
+        
+          </div>
+          <div className="App-footer">
+          </div>
+        <aside className="side-menu">
+        <a className="close"><i className="material-icons">close</i></a>
+            <ul>
                 <li><Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >Acerca de</Link></li>
                 <li><Link activeClass="active" className="test6" to="anchor" spy={true} smooth={true} duration={500}>¿Qué hacemos?</Link></li>
                 <li><Link activeClass="active" className="test7" to="test7" spy={true} smooth={true} duration={durationFn}>Servicios</Link></li>
                 <li> <a onClick={() => animateScroll.scrollTo(100)}>Contacto</a></li>
                 <li> <a onClick={() => animateScroll.scrollToBottom()}>Equipo</a></li>
             </ul>
-        </Col>
-        <Col xs={1} className={"hidden-lg hidden-md hidden-xl" }>
-        <i className="material-icons">menu</i>
-        </Col>
-      </Row>
-        <div className="App-body">
-      
-        </div>
-        <div className="App-footer">
-        </div>
+        </aside>
+
       </div>
 
 

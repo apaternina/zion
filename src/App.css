@@ -53,6 +53,7 @@ font-family: 'MyriadPro CondIt';
 
 body {
   background-color: #bb4a6b;
+  font-family: 'MyriadPro';
 }
 
 /*.App-header {
@@ -256,4 +257,55 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.content-menu-wrap {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.content-menu-wrap i {
+  color: #FFF;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.side-menu {
+    width: 260px;
+    height: 700px;
+    position: absolute;
+    /* float: right; */
+    
+    z-index: 2;
+    right: 0px;
+    background-color: #bb4a6b;
+}
+
+.side-menu ul {
+  padding: 0px;
+  padding-top: 35px;
+}
+
+.side-menu ul li {
+  list-style: none;
+  font-family: 'MyriadPro';
+  padding: 10px;
+  color: #FFF;
+}
+
+.side-menu .close {
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+    float: right;
+    right: 32px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.side-menu ul li a {
+  cursor: pointer;
 }
