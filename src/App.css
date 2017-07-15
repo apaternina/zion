@@ -201,6 +201,10 @@ body {
   cursor: pointer;
 }
 
+.App-content-link ul li a.active {
+  border-bottom: 1px solid; 
+}
+
 
 /*lg*/
 @media (min-width:980px) {
@@ -263,38 +267,47 @@ body {
     justify-content: flex-end;
     align-items: center;
     display: flex;
+
 }
 
 .content-menu-wrap i {
   color: #FFF;
   padding: 3px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
-.side-menu {
+.aside-menu {
     width: 260px;
-    height: 700px;
+    height: 1000px;
     position: absolute;
-    /* float: right; */
-    
     z-index: 2;
     right: 0px;
     background-color: #bb4a6b;
+    top: 0;
+    position: fixed;
+    transform: translate3d(261px, 0, 0);
+    transition: transform 0.3s ease-in-out;
+}
+.aside-menu.open {
+  transform: translate3d(0px, 0, 0);
+  transition: all 0.3s ease-in-out;
 }
 
-.side-menu ul {
+.aside-menu ul {
   padding: 0px;
   padding-top: 35px;
 }
 
-.side-menu ul li {
+.aside-menu ul li {
   list-style: none;
   font-family: 'MyriadPro';
   padding: 10px;
   color: #FFF;
 }
 
-.side-menu .close {
+
+.aside-menu .close {
     margin: 10px;
     width: 10px;
     height: 10px;
@@ -304,8 +317,9 @@ body {
     position: relative;
     cursor: pointer;
     color: #FFF;
+    top: 13px;
 }
 
-.side-menu ul li a {
+.aside-menu ul li a {
   cursor: pointer;
 }
